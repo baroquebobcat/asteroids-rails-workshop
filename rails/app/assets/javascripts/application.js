@@ -18,4 +18,7 @@
 //= require bootstrap-carousel
 //= require bootstrap-typeahead
 //= require bootstrap-affix
+//= require vector_battle_regular.typeface
+//= require ipad
+//= require game
 //= require shared

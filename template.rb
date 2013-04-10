@@ -83,12 +83,16 @@ download_file "#{TEMPLATE_ROOT}/rails/public/favicon.ico", "public/favicon.ico"
 remove_file "app/assets/stylesheets/application.css"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/application.css.scss", "app/assets/stylesheets/application.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/bootstrap-patch.css.scss", "app/assets/stylesheets/bootstrap-patch.css.scss"
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/game.css.scss", "app/assets/stylesheets/shared.css.scss"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "app/assets/stylesheets/shared.css.scss"
 
 # JavaScripts
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
-download_file "http://code.jquery.com/jquery-1.9.1.js", "vendor/assets/javascripts/jquery.js"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/game.js", "app/vendor/assets/javascripts/game.js"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/ipad.js", "app/vendor/assets/javascripts/ipad.js"
+download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/vector_battle_regular.typeface.js", "app/vendor/assets/javascripts/vector_battle_regular.typeface.js"
+download_file "http://code.jquery.com/jquery-1.4.1.js", "vendor/assets/javascripts/jquery.js"
 
 # Doc
 file "README.rdoc", "TODO - Document application."
@@ -96,9 +100,7 @@ file "doc/README_FOR_APP", "TODO - Document application."
 download_file "#{TEMPLATE_ROOT}/rails/public/humans.txt", "public/humans.txt"
 
 # Git
-git :init
 download_file "#{TEMPLATE_ROOT}/rails/gitignore.txt", ".gitignore"
-git add: '.', commit: "-n -a -m \"Applied MakeItHappen Template.\""
 
 # End
 say_status :end, "MakeItHappen Setup Complete!"

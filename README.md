@@ -10,7 +10,7 @@ create a new rails app
 
 create new rails app
 
-    rails new asteroids -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/github.com/baroquebobcat/asteroids-rails-workshop/master/template.rb
+    rails new asteroids -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/baroquebobcat/asteroids-rails-workshop/master/template.rb
 
 boot it up
 
