@@ -1,0 +1,11 @@
+<% if target && target.errors.any? %>
+  <div class="alert alert-error">
+    <h2><%= pluralize(target.errors.count, "Error") %> Detected!</h2>
+
+    <ul>
+	    <% target.errors.full_messages.each do |message| %>
+	      <li><%= message %></li>
+	    <% end %>
+    </ul>
+  </div>
+<% end %>

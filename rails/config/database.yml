@@ -1,0 +1,22 @@
+login: &login
+  adapter: sqlite3
+  host: localhost
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+production:
+  database: db/development.sqlite3
+  <<: *login
+
+stage:
+  database: db/stage.sqlite3
+  <<: *login
+
+development:
+  database: db/development.sqlite3
+  <<: *login
+
+test:
+  database: db/test.sqlite3
+  <<: *login

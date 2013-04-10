@@ -1,0 +1,31 @@
+/* ---------- General ---------- */
+a {outline: none;}
+.left {float: left;}
+.right {float: right;}
+/* @end */
+
+/* ---------- Rails Error Handling ---------- */
+.field-error {
+  color: #8A1F11;
+  input, select, textarea {border-color: #8A1F11;}
+}
+
+/* ---------- Header ---------- */
+.page-header {
+  .layout {
+    line-height: 0;
+    &:before, &:after {content: ""; display: table;}
+    &:after {clear: both;}
+    small {display: block; margin: 0.2em 0 0 0; font-size: 0.5em;}
+    .left {float: left;}
+    .right {float: right;}
+    .image {float: left; margin: 0.4em 0.5em 0 0;}
+    .text {float: left;}
+    .solo {margin: 0.4em 0 0.5em 0;}
+    .switch {float: left; margin: 0.9em 0.5em 0 0;}
+    .actions {
+      float: left; margin: 0.8em 0 0 0; padding: 0.5em; border: 1px solid #DDDDDD; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; border-radius: 0.5em;
+      a {display: inline-block;}
+    }
+  }
+}

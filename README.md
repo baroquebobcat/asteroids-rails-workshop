@@ -10,18 +10,12 @@ create a new rails app
 
 create new rails app
 
-    rails new asteroids
+    rails new asteroids -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/github.com/baroquebobcat/asteroids-rails-workshop/master/template.rb
 
 boot it up
 
     cd asteroids
     rails server
-
-setup git repo
-
-    git init
-    git add .
-    git commit -m "initial commit"
 
 (push to heroku)
 
