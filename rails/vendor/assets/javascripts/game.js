@@ -997,13 +997,10 @@ Game = {
     },
     end_game: function () {
       Text.renderText('GAME OVER', 50, Game.canvasWidth/2 - 160, Game.canvasHeight/2 + 10);
-      if (this.timer == null) {
-        this.timer = Date.now();
-      }
 
       // Entry point for sending data back to the server.
       var player_name = prompt("Please enter your name:");
-      $.post("/home", {score: Game.score});
+      $.post("/scores", {score: Game.score});
 
       this.state = 'waiting';
 
