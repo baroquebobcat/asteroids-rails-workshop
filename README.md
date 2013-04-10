@@ -10,6 +10,7 @@ create a new rails app
 
 create new rails app
 
+    gem install rails
     rails new asteroids -d sqlite3 -J -T -f --skip-bundle -m https://raw.github.com/baroquebobcat/asteroids-rails-workshop/master/template.rb
 
 Here is what each option is doing and why:
