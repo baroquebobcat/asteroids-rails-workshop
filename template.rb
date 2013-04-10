@@ -2,7 +2,7 @@ require "net/http"
 require "net/https"
 require "uri"
 
-TEMPLATE_ROOT = "https://raw.github.com/github.com/baroquebobcat/asteroids-rails-workshop/master"
+TEMPLATE_ROOT = "https://raw.github.com/baroquebobcat/asteroids-rails-workshop/master"
 
 # Downloads a file, swiching to a secure connection if the source requires it. Also creates parent directories if they do not exist.
 # ==== Parameters
