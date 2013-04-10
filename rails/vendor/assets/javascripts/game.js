@@ -1001,10 +1001,9 @@ Game = {
         this.timer = Date.now();
       }
 
+      // Entry point for sending data back to the server.
       var player_name = prompt("Please enter your name:");
-
-+      $.post('/home', {score: Game.score}, function(data) {
-+      });
+      $.post("/home", {score: Game.score});
 
       this.state = 'waiting';
 
