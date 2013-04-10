@@ -89,7 +89,7 @@ download_file "#{TEMPLATE_ROOT}/rails/app/assets/stylesheets/shared.css.scss", "
 # JavaScripts
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/application.js", "app/assets/javascripts/application.js"
 download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/shared.js", "app/assets/javascripts/shared.js"
-download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/game.js", "vendor/assets/javascripts/game.js"
+download_file "#{TEMPLATE_ROOT}/rails/app/assets/javascripts/game.js", "app/assets/javascripts/game.js"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/ipad.js", "vendor/assets/javascripts/ipad.js"
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/vector_battle_regular.typeface.js", "vendor/assets/javascripts/vector_battle_regular.typeface.js"
 download_file "http://code.jquery.com/jquery-1.4.1.js", "vendor/assets/javascripts/jquery.js"
