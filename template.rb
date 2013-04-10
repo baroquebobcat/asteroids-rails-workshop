@@ -94,6 +94,11 @@ download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/ipad.js", "vendo
 download_file "#{TEMPLATE_ROOT}/rails/vendor/assets/javascripts/vector_battle_regular.typeface.js", "vendor/assets/javascripts/vector_battle_regular.typeface.js"
 download_file "http://code.jquery.com/jquery-1.4.1.js", "vendor/assets/javascripts/jquery.js"
 
+# Publics
+
+download_file "#{TEMPLATE_ROOT}/rails/public/39459__THE_bizniss__laser.wav", "public/39459__THE_bizniss__laser.wav"
+download_file "#{TEMPLATE_ROOT}/rails/public/51467__smcameron__missile_explosion.wav", "public/51467__smcameron__missile_explosion.wav"
+
 # Doc
 file "README.rdoc", "TODO - Document application."
 file "doc/README_FOR_APP", "TODO - Document application."
