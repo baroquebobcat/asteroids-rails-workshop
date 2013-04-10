@@ -1003,6 +1003,9 @@ Game = {
 
       var player_name = prompt("Please enter your name:");
 
++      $.post('/home', {score: Game.score}, function(data) {
++      });
+
       this.state = 'waiting';
 
       window.gameStart = false;
